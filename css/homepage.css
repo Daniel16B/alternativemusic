@@ -136,13 +136,20 @@ body {
 }
 
 @media (max-width: 700px) {
-   .covers .track {
-      width: 510px;
+   .welcome_image, .welcome_text {
+      height: 50vh;
    }
 
-   .covers .track img {
-      height: 500px;
+   .welcome_image img {
+      width: 40vw;
+      height: auto;
    }
+
+   .welcome_section {
+      height: auto;
+   }
+
+
 
    .covers {
       margin-bottom: 50px;
@@ -150,6 +157,20 @@ body {
 }
 
 @media (max-width: 500px) {
+   .welcome_section {
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px 0px 10px 0px;
+   }
+
+   .welcome_image, .welcome_text {
+      height: 50%;
+   }
+
+   .welcome_text {
+      padding-top: 10px;
+   }
+
    .covers {
       width: 100vw;
       align: center;
