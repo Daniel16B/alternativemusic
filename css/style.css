@@ -48,3 +48,50 @@ a:hover{text-decoration: none;}
 ul li {list-style: none;}
 img {vertical-align: top}
 
+.header {
+	background-color: black;
+	width: 100vw;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header_title {
+	color: white;
+	font-size: 30px;
+	font-family: 'Tilt Warp';
+}
+
+footer {
+	border-top: 5px solid black;
+	bottom: 0;
+	width: 100vw;
+	margin-top: 10vh;
+}
+
+.footer_content {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+	font-size: 25px;
+	color: black;
+	font-family: 'Tilt Warp';
+}
+
+@media (max-width: 1200px) {
+	.footer_content {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.footer_content {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer_content p {
+		margin: 3px 0;
+	}
+}

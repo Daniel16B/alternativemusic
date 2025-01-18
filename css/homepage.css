@@ -34,23 +34,7 @@ body {
    color: black;
 }
 
-
-.header {
-   background-color: black;
-   width: 100vw;
-   height: 60px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.header_title {
-   color: white;
-   font-size: 30px;
-   font-family: 'Tilt Warp';
-}
-
-.section {
+section {
    width: 100vw;
 }
 
@@ -90,9 +74,6 @@ body {
    font-family: 'Tilt Warp';
 }
 
-.welcome_text_text {
-   font-size: 25px;
-}
 
 .welcome_text_title {
    text-align: center;
@@ -101,6 +82,10 @@ body {
 
 .welcome_text .p {
    text-align: center;
+}
+
+.welcome_text_title, .social-icons {
+   margin: 10px 0;
 }
 
 .covers {
@@ -128,6 +113,16 @@ body {
 .covers .track .title {
    font-weight: 900;
    font-size: 20px;
+   color: black;
+   padding: 0px 20px;
+   margin: 10px auto;
+   text-align: center;
+   font-family: 'Tilt Warp';
+}
+
+.covers .track .artist {
+   font-weight: 100;
+   font-size: 13px;
    color: black;
    padding: 0px 20px;
    margin: 10px auto;
@@ -169,6 +164,7 @@ body {
 
    .welcome_text {
       padding-top: 10px;
+      align-items: center;
    }
 
    .covers {
@@ -201,4 +197,27 @@ body {
    .footer {
       width: 100vw;
    }
+}
+
+.social-icons {
+   align-self: center;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.social-icons a {
+   display: inline-flex;
+   padding: 8px;
+   border: 2px solid black;
+   border-radius: 50%;
+   font-size: 20px;
+   color: black;
+   text-decoration: none;
+   margin: 8px 8px;
+   transition: .5s;
+}
+
+.social-icons a:hover {
+   background: black;
+   color: white;
 }
