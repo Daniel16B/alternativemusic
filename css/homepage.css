@@ -1,4 +1,3 @@
-
 *,*:before,*:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -86,6 +85,8 @@ section {
 
 .welcome_text_title, .social-icons {
    margin: 10px 0;
+   display: wrap;
+   flex-wrap: balance;
 }
 
 .covers {
@@ -203,6 +204,18 @@ section {
    align-self: center;
    align-items: center;
    justify-content: space-evenly;
+   display: grid;
+   -ms-grid-columns: (1fr)[8];
+   grid-template-columns: repeat(8, 1fr);
+   rid-auto-flow: row;
+   gap: 10px;
+}
+
+@media (max-width: 1300px) {
+   .social-icons {
+      -ms-grid-columns: (1fr)[4];
+         grid-template-columns: repeat(4, 1fr);
+   }
 }
 
 .social-icons a {
